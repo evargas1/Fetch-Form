@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Form</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./functions.js"></script>
+</head>
+<body>
+    <section aria-label="register with us and submit form">
+        <h2 id="title">Register</h2>
+        <h2 id="title2">Thank you for creating an account with us </h2>
+        <form id="register-form" action="https://frontend-take-home.fetchrewards.com/form">
+            <input aria-label="Enter your name" type="text" id="name" name="name" placeholder="Full Name" required><br>
+            <span id="error-box-name">Please include your first and last name</span>
+            <input aria-label="Enter your email" type="text" id="email" placeholder="Email" name="email" required><br>
+            <input aria-label="Enter your Password" type="password" id="password" placeholder="Password" name="password" required><br>
+            <span id="error-box-pass">Your password must be at least 8 characters</span>
+            <label for="occupation">Select Occupation:</label>
+            <select id="occupation" name="occupation" required>
+                <option value=""></option>
+                <!-- pulling json data -->
+            </select>
+            <br>
+            <label for="state">Select State:</label>
+            <select id="state" name="state" required>
+                <option value=""></option>
+                <!-- pulling json data -->
+            </select>
+            <br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // border: 5px solid #F8A719;
+    border: 3px solid #dad3dc;
+    box-shadow: 12px 12px 2px 1px #f5f1f6;
+    border-radius: 10%;
+    width: 25rem;
+    padding: 1rem 1.5rem;
+    margin: .5rem;
+    @media screen and (max-width: 600px){
+        width: 15rem;
+    }
+    #submit{
+        width: 95%;
+        border-radius: 10px;
+        border: solid 2px #F8A719;
+        background-color:#F8A719;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: .2rem;
+        color: #2F0B38;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            border: 2px solid #2F0B38;
+            background-color: #2F0B38;
+            color: #F8A719;
+        }
+        &:focus{
+            border: solid 2px #2F0B38;
+            background-color: #2F0B38;
+            color: #F8A719;
+        }
+    }
+    h2{
+        text-align: center;
+        color: #2F0B38;
+        font-size: 2rem;
+        margin: 0.5rem 0 1rem 0;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+    #register-form{
+        padding: 0 0 1rem .5rem;
+        @media screen and (max-width: 600px){
+            padding: 0 0 1rem .2rem;
+        }
+        #error-box-name{
+            display: none;
+            color: red;
+        }
+        #error-box-pass{
+            color: red;
+            display: none;
+        }
+        input{
+            width: 90%;
+            padding: .6rem .5rem;
+            margin: .5rem 0;
+            border: solid 2px rgb(193, 190, 190);
+            &:hover{
+                border: solid 2px #F8A719;
+            }
+            &:focus{
+                border: solid 2px #F8A719;
+            }
+        }
+        
+        label{
+            padding: 1rem 0;
+        }
+        select{
+            width: 95%;
+            margin: .5rem 0;
+            padding: .5rem .2rem;
+            border: solid 2px rgb(193, 190, 190);
+            &:hover{
+                border: solid 2px #F8A719;
+            }
+            &:focus{
+                border: solid 2px #F8A719;
+            }
+        }
+    }
+}
+
+#title2{
+    display: none;
+    font-size: 1.5rem;
+}
